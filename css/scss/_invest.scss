@@ -1,0 +1,119 @@
+.invest {
+  padding: 150px 0 60px;
+  background-image: url(../../img/main-bg.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media(max-width:800px){
+      flex-direction: column;
+    }
+  }
+  &__content {
+    max-width: 660px;
+    width: 100%;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 140px;
+    line-height: 150px;
+    color: #1f1f1f;
+    margin-bottom: 30px;
+    @media (max-width: 1130px) {
+      font-size: 100px;
+      line-height: 110px;
+    }
+    @media (max-width: 660px) {
+      font-size: 48px;
+      line-height: 58px;
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 60px;
+    @media (max-width: 1130px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    @media (max-width: 660px) {
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 35px;
+    }
+  }
+  &__img {
+    max-width: 560px;
+    width: 100%;
+    @media (max-width: 1250px) {
+      max-width: 500px;
+    }
+    @media (max-width: 1024px) {
+      max-width: 400px;
+    }
+    @media (max-width: 660px){
+      max-width: 270px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    max-width: 100%;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    & button {
+      background: #ffd700;
+      border-radius: 10px;
+      max-width: 270px;
+      width: 100%;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 43px;
+      line-height: 52px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #1a1a1a;
+      justify-content: center;
+      padding: 12px 0;
+      transition: 0.2s ease-in-out;
+      &:nth-child(1) {
+        background: rgba(223, 223, 223, 0.73);
+        color: #4d4d4d;
+        &:hover {
+          background: #ffd700;
+          color: #1a1a1a;
+        }
+        @media (max-width: 1130px) {
+          margin-left: 20px;
+        }
+      }
+      &:hover {
+        background: rgba(223, 223, 223, 0.73);
+        color: #4d4d4d;
+      }
+      @media (max-width: 1024px) {
+        font-size: 30px;
+      }
+      @media (max-width: 660px){
+        font-size: 26px;
+        line-height: 31px;
+      }
+    }
+    @media (max-width: 1250px) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  @media (max-width: 660px){
+    padding: 100px 0 40px;
+  }
+}

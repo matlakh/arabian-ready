@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+ul li {
+  list-style: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+i,
+hr,
+a,
+li {
+  font-family: "Markazi Text";
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 1340px) {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+  }
+}
